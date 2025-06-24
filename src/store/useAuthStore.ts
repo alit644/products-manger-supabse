@@ -89,7 +89,7 @@ export const useAuthStore = create<IAuthStore>((set) => ({
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-          redirectTo: "products-manger-supabse.vercel.app",
+          redirectTo: "https://products-manger-supabse.vercel.app/",
         },
       });
       if (error) {
@@ -110,7 +110,7 @@ export const useAuthStore = create<IAuthStore>((set) => ({
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "github",
         options: {
-          redirectTo: "products-manger-supabse.vercel.app",
+          redirectTo: "https://products-manger-supabse.vercel.app/",
         },
       });
       if (error) {
