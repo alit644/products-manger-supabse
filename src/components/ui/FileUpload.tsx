@@ -279,14 +279,14 @@ export const FileUpload = ({
                 className="sm:w-16 sm:h-16 w-full h-full object-cover rounded-md flex-shrink-0"
                 loading="lazy"
               />
-            </div>
-            <div className="flex-1 w-full">
-              <div className="flex justify-between items-center gap-4">
-                <p className="text-base text-neutral-700 dark:text-neutral-300 truncate max-w-xs">
-                  {imgName || "Default image"}
-                  <br />
-                  <span className="text-zinc-400">Current Image</span>
-                </p>
+              <div className="flex-1 w-full mt-2">
+                <div className="flex justify-between items-center gap-4">
+                  <p className="text-base text-neutral-700 dark:text-neutral-300 truncate max-w-xs">
+                    {imgName || "Default image"}
+                    <br />
+                    <span className="text-zinc-400">Current Image</span>
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>
