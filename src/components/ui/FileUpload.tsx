@@ -272,15 +272,16 @@ export const FileUpload = ({
             transition={{ duration: 0.3 }}
             className="relative overflow-hidden z-30 bg-neutral-900 flex items-start justify-start md:h-24 p-4 mt-4 w-full mx-auto rounded-md shadow-sm gap-4"
           >
-            <div className="mt-2 mx-auto">
-              <img
-                src={defaultImage}
-                alt="default"
-                className="sm:w-16 sm:h-16 w-full h-full object-cover rounded-md flex-shrink-0"
-                loading="lazy"
-              />
+            <section className="flex flex-col md:flex-row items-start justify-start gap-4">
+              <div className="mt-2 mx-auto">
+                <img
+                  src={defaultImage}
+                  alt="default"
+                  className="sm:w-16 sm:h-16 w-full h-full object-cover rounded-md flex-shrink-0"
+                  loading="lazy"
+                />
               </div>
-              
+
               <div className="flex-1 w-full mt-2">
                 <div className="flex justify-between items-center gap-4">
                   <p className="text-base text-neutral-700 dark:text-neutral-300 truncate max-w-xs">
@@ -289,7 +290,8 @@ export const FileUpload = ({
                     <span className="text-zinc-400">Current Image</span>
                   </p>
                 </div>
-            </div>
+              </div>
+            </section>
           </motion.div>
         ) : null}
       </div>
