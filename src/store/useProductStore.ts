@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import supabase from "../supabase";
 import { IProduct } from "../interfaces";
+import toast from "react-hot-toast";
 
 interface IProductStore {
   isLoading: boolean;
