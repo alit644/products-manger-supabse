@@ -244,6 +244,17 @@ export const useProductStore = create<IProductStore>((set) => ({
     } catch (error) {
       console.log("Error editing product", error);
       onErrorEdit?.(error);
+      if (error instanceof Error) {
+        toast.error(`Error editing product: ${error.message}`, {
+          duration: 2000,
+          position: "top-left",
+          style: {
+            backgroundColor: "#27272a",
+            color: "#fff",
+            border: "1px dashed #27272a",
+          },
+        });
+      }
       set({ isLoading: false });
     } finally {
       set({ isLoading: false });
